@@ -6,3 +6,6 @@
 /.vs
 /HighResolutionTimer/bin/Debug/netcoreapp2.2
 /HighResolutionTimer/obj
+/HighResolutionTimer/bin/Debug/netstandard2.0
+/HighResolutionTimer.Demo/bin/Debug/netcoreapp2.2
+/HighResolutionTimer.Demo/obj

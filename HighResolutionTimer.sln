@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HighResolutionTimer", "HighResolutionTimer\HighResolutionTimer.csproj", "{E3CF8D8B-60EA-44BE-A0A6-A1100ACD46C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighResolutionTimer.Demo", "HighResolutionTimer.Demo\HighResolutionTimer.Demo.csproj", "{940B9AF1-E5EB-4328-944C-4EB4322453A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HighResolutionTimer", "HighResolutionTimer\HighResolutionTimer.csproj", "{4E87A9E3-7EAA-4627-82A9-C81087ED8866}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E3CF8D8B-60EA-44BE-A0A6-A1100ACD46C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E3CF8D8B-60EA-44BE-A0A6-A1100ACD46C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E3CF8D8B-60EA-44BE-A0A6-A1100ACD46C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E3CF8D8B-60EA-44BE-A0A6-A1100ACD46C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{940B9AF1-E5EB-4328-944C-4EB4322453A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{940B9AF1-E5EB-4328-944C-4EB4322453A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{940B9AF1-E5EB-4328-944C-4EB4322453A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{940B9AF1-E5EB-4328-944C-4EB4322453A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E87A9E3-7EAA-4627-82A9-C81087ED8866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E87A9E3-7EAA-4627-82A9-C81087ED8866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E87A9E3-7EAA-4627-82A9-C81087ED8866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E87A9E3-7EAA-4627-82A9-C81087ED8866}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

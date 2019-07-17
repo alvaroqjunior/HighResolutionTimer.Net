@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Text;
+﻿using System.Diagnostics;
 using System.Threading;
 
-namespace MicroTimer
+namespace System.Timers
 {
     public class HighResolutionTimer
     {
@@ -61,22 +58,22 @@ namespace MicroTimer
                         if (ticks <= 0L) break;
                         long diff = (ticks * 1000) / Stopwatch.Frequency; // cycle in milliseconds
 
-                        if(diff >= 100)
+                        if (diff >= 100)
                             Thread.Sleep(20);
-                        else if(diff >= 40)
+                        else if (diff >= 40)
                             Thread.Sleep(10);
-                        else if(diff >= 25)
+                        else if (diff >= 25)
                             Thread.Sleep(2);
-                        else if(diff >=15 )
+                        else if (diff >= 15)
                             Thread.Sleep(1);
-                        else if(diff >=5)
+                        else if (diff >= 5)
                             Thread.SpinWait(200);
-                        else if(diff > 1)
+                        else if (diff > 1)
                             Thread.SpinWait(100);
                         else
                             Thread.SpinWait(10);
                     }
-                    
+
                     long lDelay = Stopwatch.GetTimestamp() - _nextWakeUpTickTime;
 
                     if (lDelay < _MaxDelayInTicks)

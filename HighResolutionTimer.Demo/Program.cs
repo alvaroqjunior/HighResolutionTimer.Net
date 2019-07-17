@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading;
 
-namespace MicroTimer
+namespace HighResolutionTimer.Demo
 {
     class Program
     {
@@ -25,7 +22,7 @@ namespace MicroTimer
         private static void UseMicroTimerClass()
         {
             Console.WriteLine("MICRO TIMER CLASS:");
-            HighResolutionTimer lMicroTimer = new HighResolutionTimer(50, 3);
+            var lMicroTimer = new System.Timers.HighResolutionTimer(50, 3);
             lMicroTimer.OnTimer += OnTimer;
             lMicroTimer.OnStoped += OnStoped;
             lMicroTimer.OnSkipped += OnSkipped;
